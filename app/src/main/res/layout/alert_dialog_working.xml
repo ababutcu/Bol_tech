@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/alert_working_padding_vertical"
+    android:paddingBottom="@dimen/alert_working_padding_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/alert_service_btn_layout_margin_horizontal"
+        android:layout_marginEnd="@dimen/alert_service_btn_layout_margin_horizontal">
+
+        <Button
+            android:id="@+id/btnCloseWorkAlert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/service_button_padding"
+            android:text="@string/kapat"
+            android:textAllCaps="true"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="@color/black"
+            android:textSize="@dimen/service_report_item_text_size_medium" />
+
+        <Button
+            android:id="@+id/btnWorking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/working_button_margin_horizontal"
+            android:layout_marginEnd="@dimen/working_button_margin_horizontal"
+            android:background="@drawable/login_button_background"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="@dimen/working_button_padding_horizontal"
+            android:paddingTop="@dimen/working_button_padding_vertical"
+            android:paddingEnd="@dimen/working_button_padding_horizontal"
+            android:paddingBottom="@dimen/working_button_padding_vertical"
+            android:text="@string/ise_giris"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/service_report_item_text_size_medium" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvWorkingStartingTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/working_textview_margin_top"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_horizontal"
+        android:text="@string/ornek_tarih"
+        android:textColor="@color/black"
+        android:textSize="@dimen/working_text_size" />
+</LinearLayout>

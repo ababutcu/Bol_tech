@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/service_report_margin_top"
+    tools:context=".views.ServiceReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/service_report_margin_horizontal"
+        android:layout_marginEnd="@dimen/service_report_margin_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etBaslangic"
+            style="@style/WorkingCalendarEdittextAttr"
+            android:text="@string/ornek_tarih_3" />
+
+        <EditText
+            android:id="@+id/etBitis"
+            style="@style/WorkingCalendarEdittextAttr"
+            android:text="@string/ornek_tarih_3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/service_report_margin_horizontal"
+        android:layout_marginEnd="@dimen/service_report_margin_horizontal"
+        android:layout_marginTop="@dimen/service_report_margin_top_2">
+
+        <LinearLayout
+            android:id="@+id/llCustomer"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:background="@drawable/service_spinner_box_background"
+            android:paddingStart="@dimen/service_spinner_box_padding"
+            android:paddingEnd="@dimen/service_spinner_box_padding"
+            android:paddingTop="@dimen/service_spinner_box_padding_vertical"
+            android:paddingBottom="@dimen/service_spinner_box_padding_vertical">
+
+            <Spinner
+                android:id="@+id/spCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/customer_list"
+                android:textAlignment="center" />
+    </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cbServiceTumCariler"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/cari_bazli"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:checked="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/service_report_margin_horizontal"
+        android:layout_marginEnd="@dimen/service_report_margin_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/service_report_margin_top_2">
+
+    <EditText
+        android:id="@+id/etCustomer"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:background="@drawable/service_spinner_box_background"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:padding="@dimen/service_report_edittext_padding"
+        android:text="@string/ornek_musteri"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:inputType="none"
+        android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnGetir"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_background"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:padding="@dimen/service_report_edittext_padding"
+            android:text="@string/getir"
+            android:textColor="@color/white"
+            android:textSize="@dimen/service_button_button_text_size"
+            android:layout_marginStart="@dimen/service_report_margin_horizontal"
+            android:layout_marginEnd="@dimen/service_report_margin_horizontal"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/service_report_recyclerview_margin_horizontal"
+        android:layout_marginTop="@dimen/service_report_margin_top_2"
+        android:layout_marginEnd="@dimen/service_report_recyclerview_margin_horizontal"
+        tools:listitem="@layout/item_service_report" />
+
+</LinearLayout>

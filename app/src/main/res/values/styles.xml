@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Login_Edittext_Attr" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/login_edittext_text_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:background">@drawable/login_edittext_background</item>
+        <item name="android:padding">@dimen/login_edittext_padding</item>
+        <item name="android:layout_marginStart">@dimen/login_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/login_margin_start</item>
+    </style>
+
+    <style name="Main_TextView_Attr" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/main_box_text_size</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/main_box_background</item>
+        <item name="android:layout_marginStart">@dimen/main_btn_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/main_btn_margin_horizontal</item>
+    </style>
+
+    <style name="AlertDialogButton_Attr" parent="Widget.AppCompat.Button">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">@dimen/alert_button_height</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/alert_button_margin</item>
+        <item name="android:textSize">@dimen/alert_options_button_text_size</item>
+    </style>
+
+    <style name="WorkingCalendarEdittextAttr" parent="Login_Edittext_Attr">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:drawablePadding">@dimen/working_edittext_drawable_padding</item>
+        <item name="android:padding">@dimen/working_edittext_padding</item>
+        <item name="android:layout_marginEnd">@dimen/working_edittext_margin_end</item>
+        <item name="android:drawableEnd">@drawable/ic_calendar</item>
+        <item name="android:inputType">none</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/working_edittext_background</item>
+        <item name="android:focusable">false</item>
+        <item name="android:editable">false</item>
+    </style>
+
+    <style name="ETTitleTextViewAttr" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/et_title_text_size</item>
+        <item name="android:textColor">@color/black_99</item>
+        <item name="android:layout_marginTop">@dimen/et_title_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/et_title_margin_bottom</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/login_et_title_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/login_et_title_margin_start</item>
+    </style>
+
+    <style name="ServisAyrintiliAttr" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/claret_red</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/service_report_item_text_size_small</item>
+    </style>
+
+    <style name="ServisAyrintiliEdittextAttr" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/service_report_item_text_size_medium</item>
+        <item name="android:textColor">@color/black_99</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:inputType">none</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="backgroundTint">@color/black_2</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+</resources>

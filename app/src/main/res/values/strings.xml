@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Boltech2</string>
+    <string name="kullanici_adi">Kullanıcı Adı</string>
+    <string name="sifre">Şifre</string>
+    <string name="beni_hatirla">Beni Hatırla</string>
+    <string name="giris_yap">GİRİŞ YAP</string>
+    <string name="servis_kaydi">Servis\nKaydı</string>
+    <string name="musteriler">Müşteriler</string>
+    <string name="giris_cikis">Giriş\nÇıkış</string>
+    <string name="servis_raporlari">Servis\nRaporları</string>
+    <string name="giris_cikis_raporlari">Giriş Çıkış Raporları</string>
+    <string name="ayarlar">Ayarlar</string>
+    <string name="musteri_adi">Müşteri Adı</string>
+    <string name="ornek_service_code">S03022020\u20141</string>
+    <string name="yapilan_islemler">Yapılan İşlemler</string>
+    <string name="kullanilan_malzemeler">Kullanılan Malzemeler</string>
+    <string name="servis_bitir">Servisi Kapat</string>
+    <string name="ornek_service_start">03.02.2020 14:00</string>
+    <string name="ise_giris">İŞE GİRİŞ</string>
+    <string name="isten_cikis">İŞTEN ÇIKIŞ</string>
+    <string name="ornek_tarih">03.02.2020 09:00</string>
+    <string name="ornek_tarih_2">04.02.2020 13:00</string>
+    <string name="bugun">Bugün</string>
+    <string name="bu_ay">Bu Ay</string>
+    <string name="bu_yil">Bu Yıl</string>
+    <string name="ornek_sayi">99</string>
+    <string name="ornek_kullanici">Kullanıcı Adı</string>
+    <string name="ornek_musteri">Müşteri Adı</string>
+    <string name="servis_no">Servis No</string>
+    <string name="servis_baslangic">Servis Başlangıç</string>
+    <string name="servis_bitis">Servis\nBitiş</string>
+    <string name="kullanici_adi_bos_birakilamaz">Kullanıcı adı boş bırakılamaz</string>
+    <string name="sifre_bos_birakilamaz">Şifre boş bırakılamaz</string>
+    <string name="servis_baslatildi">Servis başarıyla başlatıldı</string>
+    <string name="servis_baslatilamadi">Servis başlatilamadi,tekrar deneyin</string>
+    <string name="service_code">Servis Kodu</string>
+    <string name="servis_kapatilmadi">Servis Kapatılmadı</string>
+    <string name="servis_kapat">Servis\nKapat</string>
+    <string name="yeni_servis_baslat">Yeni\nServis</string>
+    <string name="giris_cikis_islemleri">GİRİŞ ÇIKIŞ</string>
+    <string name="ana_sayfa">Ana Sayfa</string>
+    <string name="duration_place_holder">%d:%d:%d</string>
+    <string name="kapat">Kapat</string>
+    <string name="ise_giris_basarisiz">İşe giriş işlemi gerçekleştirilemedi,lütfen tekrar deneyin</string>
+    <string name="isten_cilis_basarili">İşten çıkışınız yapıldı</string>
+    <string name="isten_cilis_basarisiz">İşten çıkışınız gerçekleştirilemedi,tekrar deneyin</string>
+    <string name="cikis_yapilmadi">Çıkış yapılmadı</string>
+    <string name="ne_yapmak_istersiniz">NE YAPMAK İSTERSİNİZ</string>
+    <string name="servis_basariyla_kapatildi">Servis başarıyla kapatıldı</string>
+    <string name="ornek_tarih_3">30.02.2020</string>
+    <string name="tamam">Tamam</string>
+    <string name="yeni_servis_kaydi_olustur">Yeni\nServis Kaydı</string>
+    <string name="servis_istekleri">Oluşturulmuş\nServis Kayıtları</string>
+    <string name="acilmis_servis_kaydi_yok">Açılmış servis kaydı bulunmamaktadır</string>
+    <string name="konu">Servis Konusu</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="servis_baslat">SERVİS BAŞLAT</string>
+    <string name="servis_istegi_baslatildi">Servis İsteğiniz Kaydedildi</string>
+    <string name="servis_istegi_baslatilamadi">Servis İsteğiniz Kaydedilemedi</string>
+    <string name="bir">1</string>
+    <string name="ornek_tel">0500 500 50 50</string>
+    <string name="ornek_bakiye">1250 TL</string>
+    <string name="musteri_tel">Müşteri Tel</string>
+    <string name="musteri_bakiye">Bakiye</string>
+    <string name="getir">GETİR</string>
+    <string name="bilgiler_yanlis_user">Bilgileriniz yanlış,bilgilerinizi lütfen kontrol edin</string>
+    <string name="ara">Ara</string>
+    <string name="servis_konusu">Servis Konusu</string>
+    <string name="musteri_ara">Müşteri Ara</string>
+    <string name="servis_isteyen_cari_yetkilisi">Servis İsteğinde Bulunan Cari Çalışanı</string>
+    <string name="istekte_bulunan_calisan">İstekte bulunan çalışan</string>
+    <string name="servis_kayit_zamani">Servis Kayıt Tarihi</string>
+    <string name="imza">İmza</string>
+    <string name="imza_atan_calisan">İmza Atan Çalışan</string>
+    <string name="servis_kapatilamadi">Servis Kapatılamadı</string>
+    <string name="tarih">Servis Kayıt Tarihi</string>
+    <string name="yeni_servis_olustur">Yeni Servis Oluştur</string>
+    <string name="olusturulmus_servis_kayitlari">Oluşturulmuş Servis Kayıtları</string>
+    <string name="acik_servis_bulunamadi">Açık Servis Bulunamadi</string>
+    <string name="olusturulmus_servis_kaydi_bulunamadi">Daha önceden oluşturulmuş servis kaydı bulunamamıştır</string>
+    <string name="t_m_cariler">Tüm Cariler</string>
+    <string name="cari_bazli">Cari Bazlı Rapor</string>
+    <string name="date_placeholder_1">%s\n%s</string>
+    <string name="baslangic">Başlangıç Tarihi: %s</string>
+    <string name="bitis">Bitiş Tarihi: %s</string>
+    <string name="stok_ara">Stok Kartı Ara</string>
+    <string name="ekle">Ekle</string>
+    <string name="stok_miktari">Stok Miktarı</string>
+    <string name="tahsilat_tutari">Tahsilat Tutarı</string>
+    <string name="tahsilat_yap">Tahsilat Yap</string>
+    <string name="tahsilat_islemi_basarili">Tahsilat İşlemi Başarılı</string>
+    <string name="tahsilat_islemi_basarisiz">Tahsilat İşlemi Başarısız lütfen tekrar deneyiniz</string>
+    <string name="kullanici_bazli">Kullanıcı bazlı</string>
+    <string name="aciklama">Açıklama</string>
+    <string name="guvenli_cikis">GÜVENLİ ÇIKIŞ</string>
+    <string name="cikis">ÇIKIŞ</string>
+    <string name="servis_bitis_2">Servis Bitiş</string>
+    <string name="servis_yapan">Servisi Yapan</string>
+    <string name="servis_kaydeden_kullanici">Servis Kaydeden Kullanıcı</string>
+    <string name="servis_suresi">Servis Süresi</string>
+    <string name="teslim_alan_cari_yetkili">Teslim Alan Cari Yetkilisi</string>
+    <string name="duration_placeholder">%s Saat %s Dakika</string>
+    <string name="duration_placeholder_2">%s Dakika</string>
+    <string name="tahsilat_raporlari">Tahsilat Raporları</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a lacinia dui, molestie aliquet purus.</string>
+
+    <string-array name="customer_list">
+        <item>Müşteri 1</item>
+        <item>Müşteri 2</item>
+        <item>Müşteri 3</item>
+        <item>Müşteri 4</item>
+        <item>Müşteri 5</item>
+    </string-array>
+    <string-array name="user_list">
+        <item>Kullanıcı 1</item>
+        <item>Kullanıcı 2</item>
+        <item>Kullanıcı 3</item>
+        <item>Kullanıcı 4</item>
+        <item>Kullanıcı 5</item>
+    </string-array>
+    <string-array name="service_list">
+        <item>Servis 1</item>
+        <item>Servis 2</item>
+        <item>Servis 3</item>
+        <item>Servis 4</item>
+        <item>Servis 5</item>
+    </string-array>
+</resources>

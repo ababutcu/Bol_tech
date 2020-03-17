@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/item_customer_padding">
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:text="@string/ornek_musteri"
+            android:fontFamily="@font/roboto"
+            android:gravity="start|center_vertical"
+            android:layout_marginEnd="@dimen/item_customer_text_margin_end"
+            android:textSize="@dimen/item_customer_text_size_1"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvCustomerCariTel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:text="@string/ornek_tel"
+            android:fontFamily="@font/roboto"
+            android:layout_gravity="center"
+            android:gravity="start|center_vertical"
+            android:layout_marginEnd="@dimen/item_customer_text_margin_end"
+            android:textSize="@dimen/item_customer_text_size_2"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvCustomerBakiye"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:text="@string/ornek_bakiye"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_gravity="center"
+            android:gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/item_customer_text_margin_end"
+            android:textSize="@dimen/item_customer_text_size_1"
+            android:textColor="@color/claret_red"/>
+
+        <ImageButton
+            android:id="@+id/imageArrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_gravity="end|center_vertical"
+            android:foregroundGravity="right|center_vertical"
+            android:src="@drawable/ic_keyboard_arrow_right"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

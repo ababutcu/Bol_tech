@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/servis_katilari_edittext_margin_horizontal"
+        android:paddingTop="@dimen/yeni_servis_kaydi_padding_top"
+        android:paddingEnd="@dimen/servis_katilari_edittext_margin_horizontal"
+        tools:context=".views.ServisKaydiActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/yeni_servis_kaydi_top_text_margin_bottom"
+            android:background="@color/blue_3"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/yeni_servis_kaydi_top_text_padding"
+            android:text="@string/olusturulmus_servis_kayitlari"
+            android:textColor="@color/white"
+            android:textSize="@dimen/yeni_servis_kaydi_top_text_size" />
+
+        <TextView
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/servis_katilari_edittext_margin_horizontal"
+            android:layout_marginTop="@dimen/servis_katilari_edittext_margin_top"
+            android:layout_marginEnd="@dimen/servis_katilari_edittext_margin_horizontal"
+            android:text="@string/musteri_adi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/service_spinner_box_background"
+            android:gravity="center"
+            android:padding="@dimen/service_kayitlari_spinner_box_padding">
+
+            <Spinner
+                android:id="@+id/spServisKayitCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvServisKodu"
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/servis_katilari_edittext_margin_horizontal"
+            android:layout_marginTop="@dimen/servis_kayitlari_text_margin_top"
+            android:layout_marginEnd="@dimen/servis_katilari_edittext_margin_horizontal"
+            android:text="@string/service_code" />
+
+        <LinearLayout
+            android:id="@+id/llServiceCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/service_spinner_box_background"
+            android:gravity="center"
+            android:padding="@dimen/service_kayitlari_spinner_box_padding">
+
+            <Spinner
+                android:id="@+id/spServisKayitServiceName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/servis_katilari_edittext_margin_horizontal"
+            android:layout_marginTop="@dimen/servis_kayitlari_text_margin_top"
+            android:layout_marginEnd="@dimen/servis_katilari_edittext_margin_horizontal"
+            android:text="@string/servis_isteyen_cari_yetkilisi" />
+
+        <EditText
+            android:id="@+id/etServisKayitCariYetkili"
+            style="@style/Login_Edittext_Attr"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/service_spinner_box_background"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="start"
+            android:inputType="none"
+            android:paddingStart="@dimen/servis_katilari_edittext_padding2"
+            android:paddingTop="@dimen/servis_katilari_edittext_padding"
+            android:paddingEnd="@dimen/servis_katilari_edittext_padding2"
+            android:paddingBottom="@dimen/servis_katilari_edittext_padding" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/servis_katilari_edittext_margin_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvKulaniciAdi"
+                style="@style/ETTitleTextViewAttr"
+                android:layout_width="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="@dimen/servis_katilari_edittext_margin_top"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="3"
+                android:text="@string/kullanici_adi" />
+
+            <TextView
+                style="@style/ETTitleTextViewAttr"
+                android:layout_width="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="@dimen/servis_katilari_edittext_margin_top"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="4"
+                android:text="@string/tarih" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etServisKayitUserName"
+                style="@style/Login_Edittext_Attr"
+                android:layout_width="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="3"
+                android:background="@drawable/service_spinner_box_background"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="start"
+                android:inputType="none"
+                android:paddingStart="@dimen/servis_katilari_edittext_padding2"
+                android:paddingTop="@dimen/servis_katilari_edittext_padding"
+                android:paddingEnd="@dimen/servis_katilari_edittext_padding2"
+                android:paddingBottom="@dimen/servis_katilari_edittext_padding" />
+
+            <EditText
+                android:id="@+id/etServisKayitTarihi"
+                style="@style/Login_Edittext_Attr"
+                android:layout_width="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="4"
+                android:background="@drawable/service_spinner_box_background"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:inputType="none"
+                android:paddingStart="@dimen/servis_katilari_edittext_padding2"
+                android:paddingTop="@dimen/servis_katilari_edittext_padding"
+                android:paddingEnd="@dimen/servis_katilari_edittext_padding2"
+                android:paddingBottom="@dimen/servis_katilari_edittext_padding"
+                android:text="@string/ornek_tarih" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/servis_katilari_edittext_margin_horizontal"
+            android:layout_marginTop="@dimen/servis_katilari_edittext_margin_top"
+            android:layout_marginEnd="@dimen/servis_katilari_edittext_margin_horizontal"
+            android:text="@string/servis_konusu" />
+
+        <EditText
+            android:id="@+id/etServisKayitKonu"
+            style="@style/Login_Edittext_Attr"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="@dimen/servis_katilari_edittext_margin_bottom"
+            android:background="@drawable/service_spinner_box_background"
+            android:gravity="start"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingTop="@dimen/servis_konusu_padding"
+            android:paddingBottom="@dimen/servis_konusu_padding" />
+
+        <Button
+            android:id="@+id/btnYeniServisKayit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/service_button_margin_horizontal"
+            android:layout_marginTop="@dimen/yeni_servis_kaydi_button_margin_vertical"
+            android:layout_marginEnd="@dimen/service_button_margin_horizontal"
+            android:layout_marginBottom="@dimen/yeni_servis_kaydi_button_margin_vertical"
+            android:background="@drawable/login_button_background"
+            android:text="@string/servis_baslat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/servis_kayitlari_btn_text_size" />
+    </LinearLayout>
+</ScrollView>

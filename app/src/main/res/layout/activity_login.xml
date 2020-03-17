@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.LoginActivity"
+    android:background="@drawable/background">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal">
+
+    <View
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"/>
+
+    <TextView
+        style="@style/ETTitleTextViewAttr"
+        android:text="@string/kullanici_adi"/>
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="@dimen/login_edittext_width"
+        style="@style/Login_Edittext_Attr"
+        android:hint="@string/kullanici_adi"
+        android:drawableStart="@drawable/ic_person_"
+        android:drawablePadding="@dimen/login_edittext_padding" />
+
+    <TextView
+        style="@style/ETTitleTextViewAttr"
+        android:text="@string/sifre"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="@dimen/login_edittext_width"
+        style="@style/Login_Edittext_Attr"
+        android:hint="@string/sifre"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="@dimen/login_edittext_padding" />
+
+    <CheckBox
+        android:id="@+id/cbRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beni_hatirla"
+        android:textColor="@color/black"
+        android:layout_gravity="start"
+        android:textSize="@dimen/login_cb_text_size"
+        android:layout_marginTop="@dimen/login_cb_margin_top"
+        android:layout_marginStart="@dimen/login_cb_margin_start"
+        android:fontFamily="@font/roboto" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="@dimen/login_btn_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/giris_yap"
+        android:layout_marginTop="@dimen/login_btn_margin_top"
+        android:background="@drawable/login_button_background"
+        android:textSize="@dimen/login_btn_text_size"
+        android:fontFamily="@font/roboto"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/login_btn_margin_top"/>
+</LinearLayout>
+</ScrollView>

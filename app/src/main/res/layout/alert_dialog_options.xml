@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_top_text_height"
+        android:background="@drawable/dialog_top"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alert_options_margin_top_2"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/ne_yapmak_istersiniz"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dialog_top_text_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_icon_margin_top"
+            android:layout_marginBottom="@dimen/dialog_icon_margin_bottom"
+            android:src="@drawable/ic_question_mark" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCikis"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/service_report_item_text_size_medium"
+        android:text="@string/cikis"
+        android:textColor="@color/black_99"
+        android:layout_gravity="end"
+        android:gravity="end|bottom"
+        android:fontFamily="@font/roboto_light"
+        android:layout_marginEnd="@dimen/alert_options_margin_horizontal_2" />
+    <Button
+        android:id="@+id/btnBeniUnut"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="@dimen/service_report_item_text_size_medium"
+        android:text="@string/guvenli_cikis"
+        android:textColor="@color/black_99"
+        android:textAllCaps="true"
+        android:fontFamily="@font/roboto_light"
+        android:layout_gravity="end|center"
+        android:gravity="end"
+        android:layout_marginEnd="@dimen/alert_options_margin_horizontal_2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/alert_options_margin_top"
+        android:layout_marginStart="@dimen/alert_options_margin_horizontal"
+        android:layout_marginEnd="@dimen/alert_options_margin_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/dark_orange">
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/AlertDialogButton_Attr"
+            android:background="@drawable/button_background"
+            android:text="@string/yeni_servis_kaydi_olustur" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/AlertDialogButton_Attr"
+            android:background="@drawable/button_background"
+            android:text="@string/servis_istekleri" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/purple">
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/AlertDialogButton_Attr"
+            android:background="@drawable/button_background"
+            android:text="@string/yeni_servis_baslat"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/AlertDialogButton_Attr"
+            android:background="@drawable/button_background"
+            android:text="@string/servis_kapat"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/claret_red">
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/AlertDialogButton_Attr"
+            android:background="@drawable/button_background"
+            android:text="@string/giris_cikis_islemleri"
+            app:elevation="3dp" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/AlertDialogButton_Attr"
+            android:background="@drawable/button_background"
+            android:text="@string/ana_sayfa"
+            app:elevation="3dp" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

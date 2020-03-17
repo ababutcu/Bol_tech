@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".views.AyrintiliServisActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/ayrintili_servis_padding_top"
+            android:paddingStart="@dimen/ayrintili_servis_padding"
+            android:paddingEnd="@dimen/ayrintili_servis_padding">
+
+            <TextView
+                style="@style/ServisAyrintiliAttr"
+                android:text="@string/musteri_adi"/>
+
+            <EditText
+                android:id="@+id/etAyrintiliMusteriAdi"
+                style="@style/ServisAyrintiliEdittextAttr" />
+
+            <TextView
+                style="@style/ServisAyrintiliAttr"
+                android:text="@string/servis_bitis_2"/>
+
+            <EditText
+                android:id="@+id/etAyrintiliServisBitis"
+                style="@style/ServisAyrintiliEdittextAttr" />
+
+            <TextView
+                style="@style/ServisAyrintiliAttr"
+                android:text="@string/servis_yapan"/>
+
+            <EditText
+                android:id="@+id/etAyrintiliServisYapan"
+                style="@style/ServisAyrintiliEdittextAttr" />
+
+            <TextView
+                style="@style/ServisAyrintiliAttr"
+                android:text="@string/servis_isteyen_cari_yetkilisi"/>
+
+            <EditText
+                android:id="@+id/etAyrintiliServisIsteyenYetkili"
+                style="@style/ServisAyrintiliEdittextAttr" />
+
+            <!--
+            <TextView
+                style="@style/ServisAyrintiliAttr"
+                android:text="@string/servis_kaydeden_kullanici"/>
+
+            <EditText
+                android:id="@+id/etAyrintiliServisKaydedenKullanici"
+                style="@style/ServisAyrintiliEdittextAttr" />
+
+                -->
+
+            <TextView
+                style="@style/ServisAyrintiliAttr"
+                android:text="@string/servis_konusu"/>
+
+            <EditText
+                android:id="@+id/etAyrintiliServisKonusu"
+                style="@style/ServisAyrintiliEdittextAttr" />
+
+            <TextView
+                style="@style/ServisAyrintiliAttr"
+                android:text="@string/yapilan_islemler"/>
+
+            <EditText
+                android:id="@+id/etAyrintiliYapilanIslemler"
+                style="@style/ServisAyrintiliEdittextAttr" />
+
+            <TextView
+                style="@style/ServisAyrintiliAttr"
+                android:text="@string/kullanilan_malzemeler"/>
+
+            <EditText
+                android:id="@+id/etAyrintiliKullanilanMalzemeler"
+                style="@style/ServisAyrintiliEdittextAttr" />
+
+            <TextView
+                style="@style/ServisAyrintiliAttr"
+                android:text="@string/servis_suresi"/>
+
+            <EditText
+                android:id="@+id/etAyrintiliServisSuresi"
+                style="@style/ServisAyrintiliEdittextAttr" />
+
+            <TextView
+                style="@style/ServisAyrintiliAttr"
+                android:text="@string/teslim_alan_cari_yetkili"/>
+
+            <EditText
+                android:id="@+id/etAyrintiliServisTeslimAlanCariYetkilisi"
+                style="@style/ServisAyrintiliEdittextAttr" />
+
+            <TextView
+                style="@style/ServisAyrintiliAttr"
+                android:text="@string/imza"/>
+
+            <ImageView
+                android:id="@+id/imageImza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+</ScrollView>

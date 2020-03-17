@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/service_report_item_padding">
+
+        <TextView
+            android:id="@+id/tvUserNameWorking"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/service_report_item_padding"
+            android:padding="@dimen/working_report_item_padding"
+            android:layout_weight="2"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="start|center_vertical"
+            android:text="@string/ornek_kullanici"
+            android:textColor="@color/black"
+            android:textSize="@dimen/service_report_item_text_size_medium" />
+
+        <TextView
+            android:id="@+id/tvWorkingStarts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/service_report_item_padding"
+            android:layout_weight="3"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:padding="@dimen/working_report_item_padding"
+            android:text="@string/ornek_tarih"
+            android:textColor="@color/claret_red"
+            android:textSize="@dimen/service_report_item_text_size_small" />
+
+        <TextView
+            android:id="@+id/tvWorkingFinishes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/service_report_item_padding"
+            android:layout_weight="3"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:padding="@dimen/working_report_item_padding"
+            android:text="@string/ornek_tarih_2"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/service_report_item_text_size_small" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

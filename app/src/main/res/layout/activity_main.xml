@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".views.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/main_boxes_margin_top">
+
+                <Button
+                    android:id="@+id/btnCustomers"
+                    android:layout_width="@dimen/main_box_size"
+                    android:layout_height="@dimen/main_box_size"
+                    android:background="@drawable/main_box_background"
+                    android:paddingTop="@dimen/main_btn_padding"
+                    android:drawablePadding="0dp"
+                    android:paddingBottom="@dimen/main_btn_padding"
+                    android:text="@string/musteriler"
+                    android:textSize="@dimen/main_box_text_size"
+                    android:drawableTop="@drawable/ic_person_outline"
+                    android:textColor="@color/claret_red"
+                    android:layout_marginEnd="@dimen/main_btn_margin_horizontal"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textAllCaps="false"
+                    app:elevation="@dimen/main_btn_elevation"/>
+
+                <Button
+                    android:id="@+id/btnServiceReports"
+                    android:layout_width="@dimen/main_box_size"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_box_background"
+                    android:paddingTop="@dimen/main_btn_padding"
+                    android:drawablePadding="0dp"
+                    android:paddingBottom="@dimen/main_btn_padding"
+                    android:text="@string/servis_raporlari"
+                    android:textSize="@dimen/main_box_text_size"
+                    android:drawableTop="@drawable/ic_format_list_1"
+                    android:textColor="@color/claret_red"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textAllCaps="false"
+                    app:elevation="@dimen/main_btn_elevation"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/main_boxs_margin_top">
+
+                <Button
+                    android:id="@+id/btnWorkingReports"
+                    android:layout_width="@dimen/main_box_size"
+                    android:layout_height="@dimen/main_box_size"
+                    android:background="@drawable/main_box_background"
+                    android:paddingTop="@dimen/main_btn_padding"
+                    android:drawablePadding="0dp"
+                    android:paddingBottom="@dimen/main_btn_padding"
+                    android:text="@string/giris_cikis_raporlari"
+                    android:textSize="@dimen/main_box_text_size"
+                    android:drawableTop="@drawable/ic_compare_arrows"
+                    android:textColor="@color/claret_red"
+                    android:layout_marginEnd="@dimen/main_btn_margin_horizontal"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textAllCaps="false"
+                    app:elevation="@dimen/main_btn_elevation"/>
+
+                <Button
+                    android:id="@+id/btnSettings"
+                    android:layout_marginEnd="0dp"
+                    android:layout_width="@dimen/main_box_size"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_box_background"
+                    android:paddingTop="@dimen/main_btn_padding"
+                    android:drawablePadding="0dp"
+                    android:paddingBottom="@dimen/main_btn_padding"
+                    android:text="@string/ayarlar"
+                    android:textSize="@dimen/main_box_text_size"
+                    android:drawableTop="@drawable/ic_settings"
+                    android:textColor="@color/claret_red"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textAllCaps="false"
+                    app:elevation="@dimen/main_btn_elevation"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/main_boxs_margin_top">
+
+                <Button
+                    android:id="@+id/btnCollecting"
+                    android:layout_width="@dimen/main_box_size"
+                    android:layout_height="@dimen/main_box_size"
+                    android:background="@drawable/main_box_background"
+                    android:paddingTop="@dimen/main_btn_padding"
+                    android:drawablePadding="0dp"
+                    android:paddingBottom="@dimen/main_btn_padding"
+                    android:text="@string/tahsilat_raporlari"
+                    android:textSize="@dimen/main_box_text_size"
+                    android:drawableTop="@drawable/ic_turkish_lira"
+                    android:textColor="@color/claret_red"
+                    android:layout_marginEnd="@dimen/main_btn_margin_horizontal"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textAllCaps="false"
+                    app:elevation="@dimen/main_btn_elevation"/>
+
+                <Button
+                    android:id="@+id/btnNotting"
+                    android:layout_marginEnd="0dp"
+                    android:layout_width="@dimen/main_box_size"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_box_background"
+                    android:paddingTop="@dimen/main_btn_padding"
+                    android:drawablePadding="0dp"
+                    android:paddingBottom="@dimen/main_btn_padding"
+                    android:textSize="@dimen/main_box_text_size"
+                    android:textColor="@color/claret_red"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textAllCaps="false"
+                    app:elevation="@dimen/main_btn_elevation"/>
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/service_margin_top_2"
+    android:paddingBottom="@dimen/service_margin_top_3">
+
+    <TextView
+        style="@style/ETTitleTextViewAttr"
+        android:layout_marginStart="@dimen/service_margin_horizontal2"
+        android:layout_marginEnd="@dimen/service_margin_horizontal2"
+        android:text="@string/musteri_ara" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/service_margin_horizontal"
+        android:layout_marginEnd="@dimen/service_margin_horizontal"
+        android:background="@drawable/auto_complete_background"
+        android:drawableEnd="@drawable/ic_search"
+        android:paddingStart="@dimen/auto_padiding_horizontal"
+        android:paddingTop="@dimen/auto_padiding_vertical"
+        android:paddingEnd="@dimen/auto_padiding_horizontal"
+        android:paddingBottom="@dimen/auto_padiding_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/auto_text_size"
+        android:layout_marginBottom="@dimen/service_margin_top_2"/>
+
+    <TextView
+        style="@style/ETTitleTextViewAttr"
+        android:layout_marginStart="@dimen/service_margin_horizontal2"
+        android:layout_marginTop="@dimen/service_margin_top_2"
+        android:layout_marginEnd="@dimen/service_margin_horizontal2"
+        android:text="@string/musteri_adi" />
+
+    <EditText
+        android:id="@+id/etCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/service_margin_horizontal"
+        android:layout_marginEnd="@dimen/service_margin_horizontal"
+        android:background="@drawable/auto_complete_background"
+        android:gravity="center"
+        android:inputType="none"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/musteri_adi"
+        android:layout_marginBottom="@dimen/service_margin_top_2"
+        android:paddingStart="@dimen/alert_edittext_padding"
+        android:paddingTop="@dimen/alert_edittext_padding"
+        android:paddingEnd="@dimen/alert_edittext_padding"
+        android:paddingBottom="@dimen/alert_edittext_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/auto_text_size" />
+
+    <TextView
+        style="@style/ETTitleTextViewAttr"
+        android:layout_marginStart="@dimen/service_margin_horizontal2"
+        android:layout_marginTop="@dimen/service_margin_top_2"
+        android:layout_marginEnd="@dimen/service_margin_horizontal2"
+        android:text="@string/servis_isteyen_cari_yetkilisi" />
+
+    <EditText
+        android:id="@+id/etCariYetkilisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/service_margin_horizontal"
+        android:layout_marginEnd="@dimen/service_margin_horizontal"
+        android:background="@drawable/auto_complete_background"
+        android:gravity="center"
+        android:inputType="text"
+        android:hint="@string/istekte_bulunan_calisan"
+        android:layout_marginBottom="@dimen/service_margin_top_2"
+        android:paddingStart="@dimen/alert_edittext_padding"
+        android:paddingTop="@dimen/alert_edittext_padding"
+        android:paddingEnd="@dimen/alert_edittext_padding"
+        android:paddingBottom="@dimen/alert_edittext_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/auto_text_size" />
+
+    <TextView
+        style="@style/ETTitleTextViewAttr"
+        android:layout_marginStart="@dimen/service_margin_horizontal2"
+        android:layout_marginTop="@dimen/service_margin_top_2"
+        android:layout_marginEnd="@dimen/service_margin_horizontal2"
+        android:text="@string/servis_konusu" />
+
+    <EditText
+        android:id="@+id/etServisKonusu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/service_margin_horizontal"
+        android:layout_marginEnd="@dimen/service_margin_horizontal"
+        android:background="@drawable/auto_complete_background"
+        android:gravity="start|top"
+        android:minLines="5"
+        android:padding="@dimen/auto_padiding_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/alert_service_btn_layout_margin_horizontal"
+        android:layout_marginEnd="@dimen/alert_service_btn_layout_margin_horizontal">
+
+        <Button
+            android:id="@+id/btnCloseServiceAlert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginTop="@dimen/service_button_margin_top"
+            android:layout_marginEnd="@dimen/alert_button_margin"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/service_button_padding"
+            android:text="@string/kapat"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/service_report_item_text_size_medium" />
+
+        <Button
+            android:id="@+id/btnStartService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/service_button_margin_top"
+            android:background="@drawable/login_button_background"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/service_button_padding"
+            android:text="@string/servis_baslat"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/service_report_item_text_size_medium" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/service_textview_margin_horizontal"
+        android:layout_marginTop="@dimen/service_textview_margin_top"
+        android:layout_marginEnd="@dimen/service_textview_margin_horizontal"
+        android:layout_marginBottom="@dimen/service_textview_margin_top"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/ornek_tarih"
+        android:textColor="@color/black_99"
+        android:textSize="@dimen/service_textview_size"
+        android:visibility="gone" />
+
+</LinearLayout>
+</ScrollView>

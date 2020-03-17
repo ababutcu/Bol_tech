@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.idyllix.bol_tech"
+    android:targetSandboxVersion="1"
+    tools:ignore="LockedOrientationActivity"
+    tools:targetApi="o">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.idyllix.bol_tech.views.TahsilatActivity"></activity>
+        <activity android:name="com.idyllix.bol_tech.views.AyrintiliServisActivity" />
+        <activity android:name="com.idyllix.bol_tech.views.YeniServisKaydiActivity" />
+        <activity android:name="com.idyllix.bol_tech.views.BaslangicActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.idyllix.bol_tech.views.ServisKaydiActivity" />
+        <activity android:name="com.idyllix.bol_tech.views.ErrorActivity" />
+        <activity android:name="com.idyllix.bol_tech.views.ServisKapatActivity" />
+        <activity android:name="com.idyllix.bol_tech.views.OptionsActivity" />
+        <activity
+            android:name="com.idyllix.bol_tech.repositories.CustomerRepository"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.idyllix.bol_tech.views.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.idyllix.bol_tech.views.GirisCikisRaporActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.idyllix.bol_tech.views.CustomersReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.idyllix.bol_tech.views.ServiceReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.idyllix.bol_tech.views.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.idyllix.bol_tech.views.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_xml" />
+        </provider>
+    </application>
+
+</manifest>

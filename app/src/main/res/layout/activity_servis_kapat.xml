@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".views.ServisKapatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/service_detail_padding_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/service_detail_margin_horizontal"
+            android:layout_marginTop="@dimen/service_detail_service_code_margin_top"
+            android:layout_marginEnd="@dimen/service_detail_margin_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="3"
+                android:background="@drawable/service_spinner_box_background"
+                android:gravity="center"
+                android:paddingBottom="@dimen/service_spinner_box_padding"
+                android:paddingTop="@dimen/service_spinner_box_padding">
+
+                <Spinner
+                    android:id="@+id/spCustomerName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/service_spinner_box_background"
+                android:gravity="center"
+                android:paddingBottom="@dimen/service_spinner_box_padding"
+                android:paddingTop="@dimen/service_spinner_box_padding">
+
+                <Spinner
+                    android:id="@+id/spServiceNames"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/service_margin_horizontal3"
+            android:layout_marginEnd="@dimen/service_margin_horizontal3"
+            android:layout_marginTop="@dimen/service_margin_top_2"
+            android:text="@string/servis_kayit_zamani" />
+
+        <EditText
+            android:id="@+id/etServiceStarts"
+            style="@style/Login_Edittext_Attr"
+            android:layout_marginStart="@dimen/service_detail_margin_horizontal"
+            android:layout_marginEnd="@dimen/service_detail_margin_horizontal"
+            android:background="@drawable/service_spinner_box_background"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="none"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:padding="@dimen/service_detail_date_padding"
+            android:text="@string/ornek_service_start"
+            android:textAlignment="center"
+            android:textColor="@color/black_99"
+            android:textSize="@dimen/service_detail_date_text_size" />
+
+        <TextView
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/service_margin_horizontal3"
+            android:layout_marginEnd="@dimen/service_margin_horizontal3"
+            android:text="@string/yapilan_islemler"
+            android:layout_marginTop="@dimen/service_margin_top_2"/>
+
+        <EditText
+            android:id="@+id/etServiceDescription"
+            style="@style/Login_Edittext_Attr"
+            android:layout_marginStart="@dimen/service_detail_margin_horizontal"
+            android:layout_marginEnd="@dimen/service_detail_margin_horizontal"
+            android:background="@drawable/service_spinner_box_background"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black" />
+
+        <TextView
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/servis_katilari_edittext_margin_horizontal"
+            android:layout_marginEnd="@dimen/servis_katilari_edittext_margin_horizontal"
+            android:text="@string/stok_ara" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoServisKapat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/service_spinner_box_background"
+            android:drawableEnd="@drawable/ic_search"
+            android:paddingStart="@dimen/auto_padiding_horizontal"
+            android:paddingTop="@dimen/auto_padiding_vertical"
+            android:paddingEnd="@dimen/auto_padiding_horizontal"
+            android:paddingBottom="@dimen/auto_padiding_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/auto_text_size"
+            android:layout_marginStart="@dimen/service_detail_margin_horizontal"
+            android:layout_marginEnd="@dimen/service_detail_margin_horizontal"
+            android:layout_marginBottom="@dimen/service_margin_top_2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/service_detail_margin_horizontal"
+            android:layout_marginEnd="@dimen/service_detail_margin_horizontal"
+            android:layout_marginTop="@dimen/servis_kapat_item_name_margin_top">
+
+            <EditText
+                android:id="@+id/etServisKapatStokAdi"
+                style="@style/Login_Edittext_Attr"
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_marginStart="0dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:layout_marginEnd="@dimen/item_customer_text_margin_end"
+                android:background="@drawable/service_spinner_box_background"
+                android:paddingTop="@dimen/servis_katilari_edittext_padding"
+                android:paddingBottom="@dimen/servis_katilari_edittext_padding"
+                android:paddingStart="@dimen/servis_katilari_edittext_padding2"
+                android:paddingEnd="@dimen/servis_katilari_edittext_padding2"
+                android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etServisKapatStokMiktari"
+            style="@style/Login_Edittext_Attr"
+            android:gravity="start"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="@dimen/item_customer_text_margin_end"
+            android:background="@drawable/service_spinner_box_background"
+            android:paddingTop="@dimen/servis_katilari_edittext_padding"
+            android:paddingBottom="@dimen/servis_katilari_edittext_padding"
+            android:paddingStart="@dimen/servis_katilari_edittext_padding2"
+            android:paddingEnd="@dimen/servis_katilari_edittext_padding2"
+            android:inputType="numberDecimal"
+            android:hint="@string/stok_miktari"
+            android:textColorHint="@color/black_99"/>
+
+            <Button
+                android:id="@+id/btnStokKaydet"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/ekle"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:background="@drawable/login_button_background"
+                android:textSize="@dimen/servis_kapat_button_text_size"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/service_margin_horizontal3"
+            android:layout_marginEnd="@dimen/service_margin_horizontal3"
+            android:text="@string/kullanilan_malzemeler"
+            android:layout_marginTop="@dimen/service_margin_top_2"/>
+
+        <EditText
+            android:id="@+id/etServiceUsing"
+            style="@style/Login_Edittext_Attr"
+            android:layout_marginStart="@dimen/service_detail_margin_horizontal"
+            android:layout_marginEnd="@dimen/service_detail_margin_horizontal"
+            android:background="@drawable/service_spinner_box_background"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black" />
+
+        <TextView
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/service_margin_horizontal3"
+            android:layout_marginEnd="@dimen/service_margin_horizontal3"
+            android:text="@string/imza_atan_calisan"
+            android:layout_marginTop="@dimen/service_margin_top_2"/>
+
+        <EditText
+            android:id="@+id/etImzaAtanYetkili"
+            style="@style/Login_Edittext_Attr"
+            android:layout_marginStart="@dimen/service_detail_margin_horizontal"
+            android:layout_marginEnd="@dimen/service_detail_margin_horizontal"
+            android:background="@drawable/service_spinner_box_background"
+            android:gravity="start"
+            android:inputType="text"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black" />
+
+        <TextView
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/service_margin_horizontal3"
+            android:layout_marginEnd="@dimen/service_margin_horizontal3"
+            android:text="@string/imza"
+            android:layout_marginTop="@dimen/service_margin_top_2"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/service_detail_draw_view_height"
+            android:layout_marginStart="@dimen/service_detail_margin_horizontal"
+            android:layout_marginEnd="@dimen/service_detail_margin_horizontal"
+            android:background="@drawable/service_spinner_box_background">
+
+            <com.idyllix.bol_tech.utils.DrawingView
+                android:id="@+id/scratch_pad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <ImageButton
+                android:id="@+id/imgClearCanvas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:src="@drawable/ic_clear"
+                android:background="@drawable/service_detail_img_btn_bg"
+                android:padding="@dimen/service_detail_image_button_padding"/>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnFinishService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/service_button_margin_horizontal"
+            android:layout_marginTop="@dimen/service_detail_button_margin_top"
+            android:layout_marginEnd="@dimen/service_button_margin_horizontal"
+            android:layout_marginBottom="@dimen/service_detail_button_margin_top"
+            android:background="@drawable/login_button_background"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/service_button_padding"
+            android:text="@string/servis_bitir"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/service_button_text_size" />
+    </LinearLayout>
+</ScrollView>

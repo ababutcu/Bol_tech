@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D32F2F</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorAccent">#1A237E</color>
+
+    <color name="grey">#d4d7dd</color>
+    <color name="grey_2">#ebe6e6</color>
+
+    <color name="white">#fff</color>
+    <color name="white_2">#b3ffffff</color>
+
+    <color name="claret_red">#A02328</color>
+
+    <color name="black">#000</color>
+    <color name="black_2">#706c61</color>
+    <color name="black_3">#3a3535</color>
+    <color name="black_99">#80000000</color>
+
+    <color name="green_1">#08d9d6</color>
+    <color name="green_5">#00adb5</color>
+    <color name="dark_green_1">#1d4d4f</color>
+    <color name="green_4">#018383</color>
+
+    <color name="blue_1">#a6e3e9</color>
+    <color name="blue_3">#355c7d</color>
+
+    <color name="dark_blue">#192965</color>
+
+    <color name="light_purple">#8785a2</color>
+    <color name="purple">#6c5b7b</color>
+    <color name="dark_purple">#5d1451</color>
+
+    <color name="orange_light">#ec8f6a</color>
+    <color name="orange_lightest">#ffb99a</color>
+    <color name="dark_orange">#eb8242</color>
+    <color name="orange_brown">#9d2503</color>
+
+    <color name="pink">#ef4b4b</color>
+
+    <color name="color_1">#112d4e</color>
+    <color name="color_2">#dbe2ef</color>
+
+</resources>

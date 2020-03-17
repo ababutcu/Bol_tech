@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/service_margin_top_2"
+        android:paddingBottom="@dimen/service_margin_top_3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/alert_tahsilat_title_text_size"
+            android:text="@string/tahsilat_yap"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/claret_red"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginTop="@dimen/alert_tahsilat_title_margin_vertical"
+            android:layout_marginBottom="@dimen/alert_tahsilat_title_margin_vertical"/>
+
+        <TextView
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/service_margin_horizontal2"
+            android:layout_marginTop="@dimen/service_margin_top_2"
+            android:layout_marginEnd="@dimen/service_margin_horizontal2"
+            android:text="@string/musteri_adi" />
+
+        <EditText
+            android:id="@+id/etTahsilatCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/service_margin_horizontal"
+            android:layout_marginEnd="@dimen/service_margin_horizontal"
+            android:background="@drawable/auto_complete_background"
+            android:gravity="center"
+            android:inputType="none"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/musteri_adi"
+            android:layout_marginBottom="@dimen/service_margin_top_2"
+            android:paddingTop="@dimen/alert_edittext_padding"
+            android:paddingBottom="@dimen/alert_edittext_padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/auto_text_size" />
+
+        <TextView
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/service_margin_horizontal2"
+            android:layout_marginTop="@dimen/service_margin_top_2"
+            android:layout_marginEnd="@dimen/service_margin_horizontal2"
+            android:text="@string/tahsilat_tutari" />
+
+        <EditText
+            android:id="@+id/etTahsilatTutari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/service_margin_horizontal"
+            android:layout_marginEnd="@dimen/service_margin_horizontal"
+            android:background="@drawable/auto_complete_background"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:hint="@string/tahsilat_tutari"
+            android:layout_marginBottom="@dimen/service_margin_top_2"
+            android:paddingStart="@dimen/alert_edittext_padding"
+            android:paddingTop="@dimen/alert_edittext_padding"
+            android:paddingEnd="@dimen/alert_edittext_padding"
+            android:paddingBottom="@dimen/alert_edittext_padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/auto_text_size" />
+
+        <TextView
+            style="@style/ETTitleTextViewAttr"
+            android:layout_marginStart="@dimen/service_margin_horizontal2"
+            android:layout_marginTop="@dimen/service_margin_top_2"
+            android:layout_marginEnd="@dimen/service_margin_horizontal2"
+            android:text="@string/aciklama" />
+
+        <EditText
+            android:id="@+id/etTahsilatAciklama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/service_margin_horizontal"
+            android:layout_marginEnd="@dimen/service_margin_horizontal"
+            android:background="@drawable/auto_complete_background"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:hint="@string/aciklama"
+            android:minLines="5"
+            android:layout_marginBottom="@dimen/service_margin_top_2"
+            android:paddingStart="@dimen/alert_edittext_padding"
+            android:paddingTop="@dimen/alert_edittext_padding"
+            android:paddingEnd="@dimen/alert_edittext_padding"
+            android:paddingBottom="@dimen/alert_edittext_padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/auto_text_size" />
+
+        <Button
+            android:id="@+id/btnTahsilatYap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/service_button_margin_horizontal"
+            android:layout_marginTop="@dimen/service_button_margin_top"
+            android:layout_marginEnd="@dimen/service_button_margin_horizontal"
+            android:background="@drawable/login_button_background"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/service_button_padding"
+            android:text="@string/tahsilat_yap"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/service_button_text_size" />
+
+    </LinearLayout>
+</ScrollView>

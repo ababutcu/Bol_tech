@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.CustomersReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/customer_margin_horizontal"
+        android:layout_marginEnd="@dimen/customer_margin_horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCustomerList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@drawable/auto_complete_background"
+            android:drawableEnd="@drawable/ic_search"
+            android:paddingStart="@dimen/auto_padiding_horizontal"
+            android:paddingTop="@dimen/auto_padiding_vertical"
+            android:paddingEnd="@dimen/auto_padiding_horizontal"
+            android:paddingBottom="@dimen/auto_padiding_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/auto_text_size"
+            android:layout_marginTop="@dimen/item_customer_margin_bottom"
+            android:layout_marginBottom="@dimen/item_customer_margin_bottom"/>
+
+        <CheckBox
+            android:id="@+id/checkboxCari"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/t_m_cariler"
+            android:checked="false"
+            android:textSize="@dimen/customer_report_cb_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/item_customer_padding"
+        android:background="@color/color_2">
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:text="@string/ornek_musteri"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="start|center_vertical"
+            android:layout_marginEnd="@dimen/item_customer_text_margin_end"
+            android:textSize="@dimen/item_customer_text_size_2"
+            android:textColor="@color/color_1"/>
+
+        <TextView
+            android:id="@+id/tvCustomerTel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:text="@string/musteri_tel"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_gravity="center"
+            android:gravity="start|center_vertical"
+            android:layout_marginEnd="@dimen/item_customer_text_margin_end"
+            android:textSize="@dimen/item_customer_text_size_2"
+            android:textColor="@color/color_1"/>
+
+        <TextView
+            android:id="@+id/tvCustomerBakiye"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:text="@string/musteri_bakiye"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_gravity="center"
+            android:gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/item_customer_text_margin_end"
+            android:textSize="@dimen/item_customer_text_size_2"
+            android:textColor="@color/color_1"/>
+
+        <ImageButton
+            android:id="@+id/imageArrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerviewCst"
+        tools:listitem="@layout/item_customers" />
+</LinearLayout>

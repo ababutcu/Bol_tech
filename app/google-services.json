@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "91674131928",
+    "firebase_url": "https://boltech-21fe5.firebaseio.com",
+    "project_id": "boltech-21fe5",
+    "storage_bucket": "boltech-21fe5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91674131928:android:740c278367b76fc71dc6ad",
+        "android_client_info": {
+          "package_name": "com.idyllix.boltech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91674131928-4cv1ljserl3385i2j3tb4hjm24mti2u7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.idyllix.boltech",
+            "certificate_hash": "3dacbc42ef31fbd5d272cb14c6854b5d591cd690"
+          }
+        },
+        {
+          "client_id": "91674131928-rv4prdt75r4imgc3o2ear10i6u53iph2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoBzSxCH9je5-jdY-vHMqLGzUA56QgB8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91674131928-rv4prdt75r4imgc3o2ear10i6u53iph2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
